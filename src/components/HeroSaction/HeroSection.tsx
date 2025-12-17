@@ -40,9 +40,9 @@ const HeroSection = () => {
           <div className="relative w-[450px ] h-[450px ]">
             <img src={sir} alt="" />
           </div>
-          <div className="absolute z-20 bg-white p-10 rounded bottom-20">
+          <div className="absolute z-20 bg-white py-8 px-10 rounded-2xl custom bottom-8 shadow-lg">
             <h1 className="font-bold text-lg ">students</h1>
-            <div className="flex gap-3 items-center">
+            <div className="flex gap-8 items-center">
               <img src={stu} alt="" />
               <p className="">
                 <span className="font-bold text-[#E64866]">3000+</span>

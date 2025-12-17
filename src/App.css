@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-
 .box1,
 .box2,
 .box3 {
@@ -32,4 +31,8 @@
   100% {
     transform: translate(0, 0);
   }
+}
+
+.custom {
+  left: -200px;
 }

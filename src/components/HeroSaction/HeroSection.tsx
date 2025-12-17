@@ -1,4 +1,6 @@
+import { IoIosArrowRoundForward } from "react-icons/io";
 import sir from "../../../public/AshrafulSir.png";
+import stu from "../../../public/students.png";
 import Image, { Image2 } from "./Image";
 
 const HeroSection = () => {
@@ -17,8 +19,11 @@ const HeroSection = () => {
             Get your professional online <br /> course today
           </p>
           <div className="">
-            <button className="bg-[#E64866] text-white py-3 text-2xl rounded px-6">
+            <button className="bg-[#E64866] flex gap-2.5 items-center text-white py-3 text-2xl rounded px-6">
               Find courses
+              <span className="text-3xl">
+                <IoIosArrowRoundForward />
+              </span>
             </button>
           </div>
         </div>
@@ -32,8 +37,14 @@ const HeroSection = () => {
           <div className="absolute top-10 left-52 box3 ">
             <Image />
           </div>
-          <div className="relative w-96 h-96">
+          <div className="relative w-[450px ] h-[450px ]">
             <img src={sir} alt="" />
+          </div>
+          <div className="absolute z-20 bg-white p-10 rounded bottom-20">
+            <h1 className="font-bold text-lg ">students</h1>
+            <div className="flex gap-3 items-center"> 
+              <img src={stu} alt="" />
+            </div>
           </div>
         </div>
       </div>

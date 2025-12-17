@@ -1,0 +1,44 @@
+import sir from "../../../public/AshrafulSir.png";
+import Image, { Image2 } from "./Image";
+
+const HeroSection = () => {
+  return (
+    <div className="bg-[#EAF0F2] py-20">
+      <div className="flex justify-evenly items-end">
+        <div className="flex flex-col gap-8 relative">
+          <div className="absolute top-6 box2 right-64 ">
+            <Image2 />
+          </div>
+          <p className="text-6xl font-extrabold mb-5">
+            Let's Simplify the <br /> world of
+            <span className="text-[#E64866] "> Learning</span>
+          </p>
+          <p className="font-light">
+            Get your professional online <br /> course today
+          </p>
+          <div className="">
+            <button className="bg-[#E64866] text-white py-3 text-2xl rounded px-6">
+              Find courses
+            </button>
+          </div>
+        </div>
+        <div className="relative ">
+          <div className="absolute top-3 box1 ">
+            <Image />
+          </div>
+          <div className="absolute top-36 box2 ">
+            <Image2 />
+          </div>
+          <div className="absolute top-10 left-52 box3 ">
+            <Image />
+          </div>
+          <div className="relative w-96 h-96">
+            <img src={sir} alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default HeroSection;
